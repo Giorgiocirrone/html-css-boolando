@@ -19,5 +19,30 @@ body {
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 200px auto;
+}
+
+
+.row {
+
+    display: flex;
+
+    flex-direction: row;
+
+
+    gap: 10px;
+}
+
+.col {
+
+    flex-basis: calc(100% / 3);
+
+}
+
+
+.card {
+
+    display: block;
+
+
 }
