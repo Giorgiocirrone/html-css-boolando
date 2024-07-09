@@ -18,8 +18,8 @@ body {
 /*Utils*/
 
 .container {
-    max-width: 1200px;
-    margin: 200px auto;
+    max-width: 900px;
+    margin: 100px auto;
 }
 
 
@@ -37,12 +37,33 @@ body {
 
     flex-basis: calc(100% / 3);
 
+
+
 }
 
+img {
+    display: block;
+    max-height: 922px;
+}
 
 .card {
 
-    display: block;
 
+    position: relative;
+
+
+}
+
+.discount {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    padding: 2px 5px;
+
+
+    color: black;
+    background-color: darkgreen;
+    font-weight: bold;
 
 }
