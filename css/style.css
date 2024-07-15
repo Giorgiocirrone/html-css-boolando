@@ -12,29 +12,76 @@
 body {
 
     font-family: sans-serif;
+
+    /*cosi se spaziato dal testo di sotto */
 }
 
 
 /*Utils*/
 
 .container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0px auto;
 }
 
+/*coostruzione header  si comportanto in base al contenuto ricordatelo quindi si può dare anche alla nav bar */
 
+
+/*appunto importante quando vuoi fixare l'header prova a riempire il main con il testo e vedi se funziona*/
 
 header {
     background-color: orangered;
 
-    height: 100px;
+    /*per evitare che sia sovrascritto */
+
+
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    /*ricorda sempre di mettere le cordinate per farlo spalmare*/
+
+
 
     margin-bottom: 20px;
+    box-shadow: 0 1px 5px #666;
+    /*spostamento verticale laterale grandezza sfumatura colore*/
 
 
 
 }
 
+#logo {
+
+    height: 50px;
+    margin: 0 auto;
+
+}
+
+.navbar {
+    height: 100px;
+    /*meglio mettere qui l'altezza oppure mettevi altezza 100%*/
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 18px;
+    font-weight: solid;
+
+
+
+
+}
+
+.navbar>div {
+    /*tutti i figli di retti della navbar avranno questa impostizione*/
+
+    flex-basis: calc(100% / 3);
+
+
+
+}
 
 
 .row {
