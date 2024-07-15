@@ -19,25 +19,33 @@ body {
 
 .container {
     max-width: 900px;
-    margin: 100px auto;
+    margin: 0px auto;
 }
 
 
 .row {
+    /*serve per tenere le cose in riga  genitore  */
 
     display: flex;
+    /*quesot mi serve per il layout*/
 
     flex-direction: row;
+    /*direzione */
 
-    /*flex-wrap: wrap;*/
-
-
+    flex-wrap: wrap;
     gap: 10px;
+    /*per mettere spazio tra i contenuti */
+
+    /*proprietà del flex container */
+
+
 }
 
 .col {
 
-    flex-basis: calc(100% / 3);
+    flex-basis: calc(100% / 3 - 20px/3);
+    /*proprità  degli item perhè il genitore il row per avere tre colonne*/
+    /*non mettere grow perchè questa proprietà se ho più contentuto si allaraga e non va bene */
 
 
 
@@ -45,29 +53,33 @@ body {
 
 img {
     display: block;
+    /*serve per normalizzare l'immagine e soprattutto ricorda che il tag ha valenza semantica non è uno sfondo  */
     max-height: 922px;
+    max-width: 100%;
 }
 
 .card {
 
     position: relative;
-    cursor: pointer;
+
 
 }
 
 .discount {
     position: absolute;
+    /*prezzo in alto a destra rispetto al padre ovvero la card*/
 
     top: 0;
     right: 0;
     padding: 2px 5px;
 
-    color: black;
+    color: #fff;
     font-weight: bold;
+
 
 }
 
-/*inutile rendere le classi indipendenti */
+/*inutile rendere le classi indipendenti  dobbiamo centralizzare perchè alcuni prezzi sono rossi e alcuni verdi */
 
 .bg-red {
     background-color: red;
@@ -82,26 +94,23 @@ img {
 
 }
 
-.favourite {
 
-
-    color: red;
-    font-size: 24px;
-    position: absolute;
-    bottom: 10px;
-    text-align: center;
-
-    display: none;
-    /*lo facciamo scomparire*/
-}
 
 /*quando passo sulla carta con il cursore deve comparire favourite*/
 
 /* l'ultima cosa che scrivo è l'obbiettivo */
-.card.card:hover .favourite {
+.card {
 
     display: inline-block;
 
 
-    /*tradotto significa che deve essere  il favourite della card su cui siamo in hover  */
+    /*tradotto significa che deve essere  il favourite della card su cui siamo in hover  perchè quando compare deve spuntare il cuore */
 }
+
+
+
+/*in questo esercizio è importante flexbox per il layout  e il position per fare il lavoro di fino
+
+
+
+melgio fare una rigra iniziale in modoto tale che se ho qualcos'altro da mettere posso andare a capo */
