@@ -23,6 +23,20 @@ body {
 }
 
 
+
+header {
+    background-color: orangered;
+
+    height: 100px;
+
+    margin-bottom: 20px;
+
+
+
+}
+
+
+
 .row {
     /*serve per tenere le cose in riga  genitore  */
 
@@ -95,17 +109,14 @@ img {
 }
 
 
-
-/*quando passo sulla carta con il cursore deve comparire favourite*/
-
-/* l'ultima cosa che scrivo è l'obbiettivo */
 .card {
 
     display: inline-block;
 
 
-    /*tradotto significa che deve essere  il favourite della card su cui siamo in hover  perchè quando compare deve spuntare il cuore */
 }
+
+
 
 
 
